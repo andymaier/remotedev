@@ -6,7 +6,7 @@ remotedev:
     - ~:/home
     #- ./ubuntu-desktop-lxqt-vnc/ssl:/etc/nginx/ssl
     ports:
-    - "127.0.0.1:6080:80"
+    - "6080:80"
     environment:
     - USER=xma
     - PASSWORD=mypassword
