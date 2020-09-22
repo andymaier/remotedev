@@ -1,4 +1,4 @@
-FROM dorowu/ubuntu-desktop-lxde-vnc:bionic-lxqt
+FROM dorowu/ubuntu-desktop-lxde-vnc:focal-lxqt
 
 RUN sudo sed -i 's|http://tw.|http://de.|g' /etc/apt/sources.list
 RUN sudo apt update
