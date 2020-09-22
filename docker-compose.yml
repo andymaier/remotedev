@@ -1,13 +1,13 @@
 remotedev:
-    build: .
-    restart: unless-stopped
-    volumes:
-    - /dev/shm:/dev/shm
-    - "$PWD":/root/home
-    #- ./ubuntu-desktop-lxqt-vnc/ssl:/etc/nginx/ssl
-    ports:
-    - "6080:80"
-    environment:
-    - USER=xma
-    - PASSWORD=mypassword
-    - RESOLUTION=2560x1600
+  build: .
+  restart: unless-stopped
+  volumes:
+  - /dev/shm:/dev/shm
+  #- "$PWD":/root/home
+  #- ./ubuntu-desktop-lxqt-vnc/ssl:/etc/nginx/ssl
+  ports:
+  - "6080:80"
+  environment:
+  - USER=xma
+  - PASSWORD=mypassword
+  - RESOLUTION=2560x1600
