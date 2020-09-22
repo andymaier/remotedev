@@ -13,4 +13,4 @@ RUN sudo add-apt-repository -y ppa:phoerious/keepassxc
 RUN sudo add-apt-repository -y ppa:peek-developers/stable
 
 RUN sudo apt -y upgrade
-RUN sudo apt -y install qownnotes fish nextcloud-client less mc htop git smartgithg qtcreator qt5-default g++ qttools5-dev build-essential qtdeclarative5-dev libqt5svg5-dev qttools5-dev-tools libqt5xmlpatterns5-dev libqt5websockets5-dev keepassxc clion phpstorm vim telnet nmap inetutils-ping peek xscreensaver
+RUN sudo apt -y install tmux qownnotes fish nextcloud-client less mc htop git smartgithg qtcreator qt5-default g++ qttools5-dev build-essential qtdeclarative5-dev libqt5svg5-dev qttools5-dev-tools libqt5xmlpatterns5-dev libqt5websockets5-dev keepassxc clion phpstorm vim telnet nmap inetutils-ping peek xscreensaver
