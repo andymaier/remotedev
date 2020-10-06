@@ -10,4 +10,4 @@ remotedev:
   environment:
   - USER=xma
   - PASSWORD=mypassword
-  - RESOLUTION=2560x1600
+  - RESOLUTION=1920x1080
