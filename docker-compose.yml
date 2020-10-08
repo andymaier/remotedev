@@ -4,7 +4,7 @@ remotedev:
   volumes:
   - /dev/shm:/dev/shm
   - /var/run/docker.sock:/var/run/docker.sock
-  - "$PWD":/root/home/localroot
+  - "$PWD":/root/home
   #- ./ubuntu-desktop-lxqt-vnc/ssl:/etc/nginx/ssl
   ports:
   - "6080:80"
