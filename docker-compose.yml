@@ -1,4 +1,4 @@
-remotedev:
+remotedev: 
   build: .
   restart: unless-stopped
   volumes:
