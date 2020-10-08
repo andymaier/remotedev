@@ -9,6 +9,6 @@ remotedev:
   ports:
   - "6080:80"
   environment:
-  - USER=xma
+  - USER=root
   - PASSWORD=mypassword
   - RESOLUTION=1920x1080
