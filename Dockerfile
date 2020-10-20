@@ -14,5 +14,10 @@ RUN sudo add-apt-repository -y ppa:peek-developers/stable
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 RUN sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 
+RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+RUN sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
 RUN sudo apt -y upgrade
-RUN sudo apt -y install apt-transport-https ca-certificates curl software-properties-common docker-ce tmux qownnotes fish nextcloud-client less mc htop git smartgithg qtcreator qt5-default g++ qttools5-dev build-essential qtdeclarative5-dev libqt5svg5-dev qttools5-dev-tools libqt5xmlpatterns5-dev libqt5websockets5-dev keepassxc clion phpstorm vim telnet nmap inetutils-ping peek xscreensaver systemd
+RUN sudo apt -y install apt-transport-https ca-certificates curl software-properties-common docker-ce tmux qownnotes fish nextcloud-client less mc htop git smartgithg qtcreator qt5-default g++ qttools5-dev build-essential qtdeclarative5-dev libqt5svg5-dev qttools5-dev-tools libqt5xmlpatterns5-dev libqt5websockets5-dev keepassxc clion phpstorm vim telnet nmap inetutils-ping peek xscreensaver systemd docker-compose kafkacat code maven
+# java extension pack is needed for vs code!
+# mouse support for tmux
