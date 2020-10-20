@@ -18,6 +18,15 @@ RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key
 RUN sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 
 RUN sudo apt -y upgrade
-RUN sudo apt -y install apt-transport-https ca-certificates curl software-properties-common docker-ce tmux qownnotes fish nextcloud-client less mc htop git smartgithg qtcreator qt5-default g++ qttools5-dev build-essential qtdeclarative5-dev libqt5svg5-dev qttools5-dev-tools libqt5xmlpatterns5-dev libqt5websockets5-dev keepassxc clion phpstorm vim telnet nmap inetutils-ping peek xscreensaver systemd docker-compose kafkacat code maven
-# java extension pack is needed for vs code!
-# mouse support for tmux
+RUN sudo apt -y install apt-transport-https ca-certificates curl software-properties-common docker-ce tmux qownnotes zsh less mc htop git smartgithg keepassxc intellij-idea-community vim telnet nmap inetutils-ping peek xscreensaver systemd docker-compose kafkacat code maven autocutsel
+
+RUN useradd -ms /bin/bash developer
+USER developer
+WORKDIR /home/developer 
+
+RUN mkdir /home/developer/.vnc
+COPY xstartup /home/developer/.vnc/xstartup
+
+USER root
+RUN usermod -aG sudo developer
+RUN usermod -aG docker developer

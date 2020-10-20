@@ -10,5 +10,5 @@ remotedev:
   - "6080:80"
   environment:
   - USER=root
-  - PASSWORD=mypassword
+  - VNC_PASSWORD=mypassword
   - RESOLUTION=1920x1080
