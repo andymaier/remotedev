@@ -6,6 +6,7 @@ services:
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - user-data:/home/developer
+    - /root:/developer/root
     ports:
     - "6081:80"
     environment:
@@ -16,3 +17,8 @@ services:
 
 volumes:
   user-data:
+
+networks:
+  default:
+    external:
+      name: cp-all-in-one_default
