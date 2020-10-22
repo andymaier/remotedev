@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
-    - user-data:/developer
+    - user-data:/home/developer
     ports:
     - "6081:80"
     environment:
