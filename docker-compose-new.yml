@@ -6,6 +6,7 @@ services:
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - user-data:/home/developer
+    - lxqt-share:/usr/share/lxqt
     ports:
     - "6081:80"
     environment:
@@ -16,3 +17,4 @@ services:
 
 volumes:
   user-data:
+  lxqt-share:
